@@ -150,7 +150,7 @@
                     {
                         "id": "creationdate",
                         "type": "text",
-                        "name": "Creation DateName",
+                        "name": "CreationDateName",
                         "width": 2,
                         "required": true
                     },
