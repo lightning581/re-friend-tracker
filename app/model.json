@@ -185,7 +185,7 @@
                         "name": "Activity",
                         "icon": "fa-running",
                         "color": "orange",
-                        "page": "groupspage"
+                        "page": "activitiespage"
                     }
                 ]
             },
