@@ -114,6 +114,14 @@
                         "width": 2
                     },
                     {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000
+                    },
+                    {
                         "type": "deleteButton",
                         "name": "Delete"
                     },
@@ -138,6 +146,62 @@
                         "name": "GroupName",
                         "width": 2,
                         "required": true
+                    },
+                    {
+                        "id": "creationdate",
+                        "type": "text",
+                        "name": "Creation DateName",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000
+                    },
+                    {
+                        "type": "deleteButton",
+                        "name": "Delete"
+                    },
+                    {
+                        "type": "cancelButton",
+                        "name": "Cancel"
+                    },
+                    {
+                        "type": "okButton",
+                        "name": "Ok"
+                    }
+                ]
+            },
+            {
+                "id": "ActivitiesForm",
+                "title": "Activity",
+                "url": "/activity",
+                "formFieldList": [
+                    {
+                        "id": "acitivitiesname",
+                        "type": "text",
+                        "name": "ActivityName",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "activitiesdatum",
+                        "type": "text",
+                        "name": "DateName",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "height": 4,
+                        "maxLength": 5000
                     },
                     {
                         "type": "deleteButton",
