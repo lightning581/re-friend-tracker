@@ -177,7 +177,7 @@
                 ]
             },
             {
-                "id": "ActivitiesForm",
+                "id": "ActivitiyForm",
                 "title": "Activity",
                 "url": "/activity",
                 "formFieldList": [
