@@ -149,8 +149,8 @@
                     },
                     {
                         "id": "creationdate",
-                        "type": "text",
-                        "name": "CreationDateName",
+                        "type": "date",
+                        "name": "CreationDate",
                         "width": 2,
                         "required": true
                     },
@@ -182,18 +182,26 @@
                 "url": "/activity",
                 "formFieldList": [
                     {
-                        "id": "acitivitiesname",
+                        "id": "name",
                         "type": "text",
-                        "name": "ActivityName",
+                        "name": "Activity",
                         "width": 2,
                         "required": true
                     },
                     {
-                        "id": "activitiesdatum",
-                        "type": "text",
-                        "name": "DateName",
+                        "id": "date",
+                        "type": "date",
+                        "name": "Date",
                         "width": 2,
                         "required": true
+                    },
+                    {
+                        "id": "location",
+                        "type": "autocomplete",
+                        "name": "Location",
+                        "url": "/location",
+                        "form": "LocationForm",
+                        "width": 2
                     },
                     {
                         "id": "comment",
