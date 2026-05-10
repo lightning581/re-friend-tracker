@@ -151,8 +151,8 @@
                         "id": "creationdate",
                         "type": "date",
                         "name": "CreationDate",
-                        "width": 2,
-                        "required": true
+                        "required": true,
+                        "width": 2
                     },
                     {
                         "id": "comment",
@@ -282,8 +282,42 @@
                         "color": "blue",
                         "search": true,
                         "url": "/friend",
+                        "page": "listfriendspage"
+                    }
+                ]
+            },    
+            {
+                "id": "listfriendspage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "button",
+                        "name": "EditFriend",
+                        "icon": "fa-user",
+                        "color": "green",
                         "form": {
                             "form": "FriendForm"
+                        }
+                    },
+                    {
+                        "type": "newButton",
+                        "name": "AddActivity",
+                        "icon": "fa-running",
+                        "color": "green",
+                        "form": {
+                            "form": "AddActivityForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-running",
+                        "color": "blue",
+                        "search": true,
+                        "url": "/friend/:friendKey/activity",
+                        "form": {
+                            "form": "AddActivityForm"
                         }
                     }
                 ]
@@ -310,9 +344,31 @@
                         "color": "blue",
                         "search": true,
                         "url": "/location",
+                        "page": "listlocationspage"
+                    }
+                ]
+            },    
+            {
+                "id": "listlocationspage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "button",
+                        "name": "EditLocation",
+                        "icon": "fa-home",
+                        "color": "green",
                         "form": {
                             "form": "LocationForm"
                         }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-running",
+                        "color": "blue",
+                        "search": true,
+                        "url": "/location/:locationKey/activity"
                     }
                 ]
             },
@@ -364,9 +420,31 @@
                         "color": "orange",
                         "search": true,
                         "url": "/activity",
+                        "page": "listactivityspage"
+                    }
+                ]
+            },    
+            {
+                "id": "listactivityspage",
+                "elementList": [
+                    {
+                        "type": "backbutton"
+                    },
+                    {
+                        "type": "button",
+                        "name": "EditActivity",
+                        "icon": "fa-running",
+                        "color": "green",
                         "form": {
                             "form": "ActivityForm"
                         }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-user",
+                        "color": "blue",
+                        "search": true,
+                        "url": "/activity/:activityKey/friend"
                     }
                 ]
             }
